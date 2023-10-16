@@ -6,7 +6,8 @@
   "scripts": {
     "test": "vitest",
     "dev": "tsx watch src/server.ts",
-    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js"
+    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js",
+    "build": "tsup src --out-dir build"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@types/node": "^20.8.4",
     "@types/supertest": "^2.0.14",
     "supertest": "^6.3.3",
+    "tsup": "^7.2.0",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2"
   },
