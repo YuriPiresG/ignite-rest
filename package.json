@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "vitest",
     "dev": "tsx watch src/server.ts",
     "knex": "node --loader tsx ./node_modules/knex/bin/cli.js"
   },
@@ -12,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.8.4",
+    "@types/supertest": "^2.0.14",
+    "supertest": "^6.3.3",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2"
   },
@@ -21,6 +24,7 @@
     "fastify": "^4.24.0",
     "knex": "^3.0.1",
     "sqlite3": "^5.1.6",
+    "vitest": "^0.34.6",
     "zod": "^3.22.4"
   }
 }

@@ -5,6 +5,9 @@ import { randomUUID } from "crypto";
 import { checkSessionIdExists } from "../middleware/check-session-id-exists";
 
 export async function transactionRoutes(app: FastifyInstance) {
+  app.addHook("preHandler", async (request) => {
+    console.log(`[${request.method}] ${request.url}]`);
+  });
   app.get(
     "/",
     {
